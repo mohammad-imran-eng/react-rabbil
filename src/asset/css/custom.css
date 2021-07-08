@@ -1,0 +1,56 @@
+.topFixedBanner {
+    background-image: url("../images/banner.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.topBannerOverlay {
+    position: absolute;
+    min-height: 500px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.topContent{
+    margin-top: 10rem;
+}
+.topTitle {
+    font-family: 'Montserreat', sans-serif;
+    font-weight: 700;
+    color: white;
+    font-size: 48px;
+}
+
+.topSubTitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 22px;
+    margin-bottom: 32px;
+}
+.icon-border {
+    border: 1px solid turquoise;
+    padding: 20px;
+    border-radius: 5px;
+}
+.serviceMainTitle {
+    color: teal;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    font-family: 'Montserreat',sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+}
+.navTitle {
+    font-family: 'Montserreat', sans-serif;
+    color: white !important;
+    font-weight: 700;
+    font-size: 24px;
+}
+.navTitleScroll {
+    font-family: 'Montserreat', sans-serif;
+    color: turquoise !important;
+    font-weight: 700;
+    font-size: 24px;
+}
