@@ -2,7 +2,6 @@ import React, { Component, Fragment } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLaptopCode, faMobile, faPencilRuler } from '@fortawesome/free-solid-svg-icons'
-import '../../asset/css/custom.css'
 
 class Services extends Component {
     render() {
@@ -10,9 +9,9 @@ class Services extends Component {
             <Fragment>
                 <Container className="text-center my-5">
                     <h1 className="serviceMainTitle">MY SERVICES</h1>
-                    <Row className="mt-4">
+                    <Row className="my-4">
                         <Col lg={4} md={6} sm={12}>
-                            <Card style={{ width: '18rem' }} className="text-center">
+                            <Card className="text-center mx-auto">
                                 <div className="text-center text-info mt-2">
                                     <FontAwesomeIcon size="8x" icon={faLaptopCode} className="icon-border" />
                                 </div>
@@ -28,7 +27,7 @@ class Services extends Component {
                         </Col>
 
                         <Col lg={4} md={6} sm={12}>
-                            <Card style={{ width: '18rem' }} className="text-center">
+                            <Card className="text-center mx-auto mt-2">
                                 <div className="text-center text-info mt-2">
                                     <FontAwesomeIcon size="8x" icon={faMobile} className="icon-border" />
                                 </div>
@@ -44,7 +43,7 @@ class Services extends Component {
                         </Col>
 
                         <Col lg={4} md={6} sm={12}>
-                            <Card style={{ width: '18rem' }} className="text-center">
+                            <Card className="text-center mx-auto mt-2">
                                 <div className="text-center text-info mt-2">
                                     <FontAwesomeIcon size="8x" icon={faPencilRuler} className="icon-border" />
                                 </div>

@@ -7,16 +7,26 @@ class TopNavigation extends Component {
     constructor() {
         super();
         this.state = {
-            navBarTitle: "navTitle"
+            navBarTitle: "navTitle",
+            navBarBack: "navBackground",
+            navBarItem: "navItem"
         }
     }
 
     onScroll = () => {
         if (window.scrollY > 100) {
-            this.setState({ navBarTitle: 'navTitleScroll' })
+            this.setState({
+                navBarTitle: 'navTitleScroll',
+                navBarBack: 'navBackgroundScroll',
+                navBarItem: 'navItemScroll'
+            })
         }
         else if (window.scrollY < 100) {
-            this.setState({ navBarTitle: 'navTitle' })
+            this.setState({
+                navBarTitle: 'navTitle',
+                navBarBack: 'navBackground',
+                navBarItem: 'navItem'
+            })
         }
     }
 
@@ -27,17 +37,17 @@ class TopNavigation extends Component {
     render() {
         return (
             <Fragment>
-                <Navbar fixed="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
+                <Navbar className={this.state.navBarBack} fixed="top" collapseOnSelect expand="lg" variant="dark">
                     <Navbar.Brand className={this.state.navBarTitle}>Mohammad Imran</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="ml-auto">
-                            <Nav.Link href="#deets">HOME</Nav.Link>
-                            <Nav.Link href="#deets">SERVICES</Nav.Link>
-                            <Nav.Link href="#deets">COURSES</Nav.Link>
-                            <Nav.Link href="#deets">PORTFOLIO</Nav.Link>
-                            <Nav.Link href="#deets">CONTACT</Nav.Link>
-                            <Nav.Link href="#deets">ABOUT</Nav.Link>
+                        <Nav className="ml-auto {this.state.}">
+                            <Nav.Link href="#deets" className={this.state.navBarItem}>HOME</Nav.Link>
+                            <Nav.Link href="#deets" className={this.state.navBarItem}>SERVICES</Nav.Link>
+                            <Nav.Link href="#deets" className={this.state.navBarItem}>COURSES</Nav.Link>
+                            <Nav.Link href="#deets" className={this.state.navBarItem}>PORTFOLIO</Nav.Link>
+                            <Nav.Link href="#deets" className={this.state.navBarItem}>CONTACT</Nav.Link>
+                            <Nav.Link href="#deets" className={this.state.navBarItem}>ABOUT</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
