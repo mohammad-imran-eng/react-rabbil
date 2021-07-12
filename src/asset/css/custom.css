@@ -35,7 +35,7 @@
     border-radius: 5px;
 }
 .serviceMainTitle {
-    color: rgb(100, 226, 226);
+    color: #17a2b8;
     margin-top: 5rem;
     margin-bottom: 3rem;
     font-family: 'Montserreat',sans-serif;
@@ -67,12 +67,14 @@
     -moz-transition:background-color 400ms linear;
     -o-transition: background-color 400ms linear;
     transition: background-color 400ms linear;
+    box-shadow: 0 0 6px 0 rgba(0,115,230,0.3);
 }
 .navItem {
+    font-size: 16px;
     text-decoration: none !important;
     font-family: 'Montserreat', sans-serif;
     font-weight: 400;
-    color: #ffffff !important;
+    color: #ffffff;
 
 }
 
@@ -80,7 +82,7 @@
     text-decoration: none !important;
     font-family: 'Montserreat', sans-serif;
     font-weight: 600 !important;
-    color: rgb(5, 226, 255) !important;
+    color: rgb(5, 226, 255);
 
 }
 
@@ -136,7 +138,7 @@
 }
 .iconBullet {
     font-size: 16px;
-    color: #0073E6;
+    color: #17a2b8;
 }
 .workCard {
     margin-top: 14%;
@@ -165,7 +167,7 @@
     font-weight: 400;
 }
 .courseDetails {
-    color: rgb(100, 226, 226);
+    color: #17a2b8;
     font-size: 19px;
 }
 .courseDetails:hover {
@@ -209,4 +211,88 @@
     height: 100px;
     border-radius: 50%;
     border: 1px solid #17a2b8;
+}
+.footer {
+    margin-top: 5rem;
+}
+.footerTitle {
+    font-family: 'Montserreat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+.socialLink {
+    text-decoration: none;
+    color: #17a2b8;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.socialLink:hover {
+    text-decoration: none;
+    color: #000000;
+}
+.footerLink {
+    color: rgb(128, 128, 128);
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footerLink:hover {
+    color: #17a2b8;
+    text-decoration: none;
+}
+
+.copyrightSection {
+    padding: 20px;
+    background: #17a2b8;
+}
+.copyrightLink {
+    color: #ffffff;
+    font-family: 'Montserreat', sans-serif;
+    text-decoration: none;
+}
+.copyrightLink:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.topFixedPage {
+    background-image: url("../images/banner.png");
+    min-height: 280px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:  right;
+}
+.topPageOverlay {
+    position: absolute;
+    min-height: 250px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.topPageContent{
+    margin-top: 9rem;
+}
+
+.pageTitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 28px;
+    margin-bottom: 32px;
+}
+
+.contactSection {
+    font-size: 22px;
+    color: rgb(24, 23, 23);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.form-control:focus {
+    border-radius: 2px !important;
+    border-color: #17a2b8 !important;
+    box-shadow: 0 0 4px 0 rgba(0, 115, 230, 0.2) !important;
 }

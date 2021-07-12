@@ -33,7 +33,7 @@ class Video extends Component {
                 <Modal size="lg" show={this.state.show} onHide={this.modalClose}>
                     <Modal.Body>
                         <Player>
-                            <source src="https://youtu.be/gviAd_TlhIQ" />
+                            <source src="https://www.youtube.com/watch?v=3LOlrM6BA5w&list=RDgviAd_TlhIQ&index=2" />
                             <BigPlayButton position="center" />
                         </Player>
                     </Modal.Body>
